@@ -13,7 +13,6 @@ body {
 }
 
 main {
-  background-color: rgba(0, 0, 0, 0.5);
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -21,6 +20,16 @@ main {
   align-items: center;
   justify-content: center;
   color: #fff;
+}
+
+main > *:not(img) {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0.5em;
+}
+
+img {
+  height: 50vh;
+  max-width: 100%;
 }
 
 a {
